@@ -19,7 +19,7 @@ refreshButton.addEventListener('click', function() {
 
 
 function getCurrencies() {
-  axios.get('http://www.floatrates.com/daily/rub.json')
+  axios.get('https://www.floatrates.com/daily/rub.json')
     .then(function (response) {
       // handle success    
       console.log(response);
