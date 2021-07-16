@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парсинг валют</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Курс рубля по отношению к другим валютам</h1>
+        <div class="menu">
+          <button type="button" class="btn btn-light menu__btn" data-refresh>Обновить</button>
+          <button type="button" class="btn btn-light menu__btn" data-chart>График</button>
+        </div>
+
+        <div class="loader"></div>              
+        <table class="table table-dark table-striped data-table hide" data-table>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Валюта</th>
+              <th scope="col">Курс</th>
+              <th scope="col">Дата</th>
+            </tr>
+          </thead>
+          <tbody data-table-content>
+          </tbody>
+        </table>
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+</html>

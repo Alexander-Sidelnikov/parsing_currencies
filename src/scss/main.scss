@@ -1,0 +1,74 @@
+// @import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+// $font-size: 1rem;
+// $font-color: lch(53 105 40);
+
+// html {
+//     font-size: $font-size;
+//     color: $font-color;
+// }
+
+body {
+    background: #232526;
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526);
+
+}
+
+// .container {
+//     margin: 0 auto;
+//     padding: 0 20px;
+// }
+
+.page-title {
+    color: #ffffff;
+    text-align: center;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.menu {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu__btn {
+    box-shadow: none;
+    &:focus {
+    box-shadow: none;
+    }
+    &:hover {
+        background: blanchedalmond;
+    }
+}
+
+.loader {
+    margin: 20px auto;
+    border: 16px solid #212529;
+    border-top: 16px solid blanchedalmond;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    &.hide {
+        display: none;
+
+    }
+  }
+  
+@keyframes spin {
+0% { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+.data-table.hide {
+    display: none;
+}
+
+#myChart {
+    width: 100%;
+    &.hide {
+        display: none;
+    }
+}
